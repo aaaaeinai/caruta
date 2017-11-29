@@ -3,7 +3,11 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const token = '';
+
+const myModule = require('./db');
+let val = myModule.hello();
+
+const token = val;
 
 client.on('ready', () => {
     console.log('I am ready!');
