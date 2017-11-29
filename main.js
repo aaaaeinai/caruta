@@ -21,7 +21,7 @@ client.on('message', message => {
     }
     if (message.content === '~reace') {
         const collector = message.createReactionCollector(
-            ( reaction, user) => reaction.emoji.name === '👌' && user.id === 'someID',
+            ( reaction, user ) => reaction.emoji.name === '👌',
             { time: 15000 }
         );
         collector.on('collect', r => console.log(`Collected ${r.emoji.name}`));
