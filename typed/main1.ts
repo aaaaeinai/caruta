@@ -1,30 +1,30 @@
-// es6 learned from tsc
-"use strict";
-exports.__esModule = true;
 
-const Discord = require('discord.js');
+import * as discord from "discord.js"
 
-const client = new Discord.Client();
+const client = new discord.Client()
 
+import * as db from "./db"
+var val = db.hello()
 
-const myModule = require('./db');
-let val = myModule.hello();
-
-const token = val;
+const token = val
 
 client.on('ready', () => {
-    console.log('I am ready!');
-});
+    console.log('Go!')
+})
 
 client.on('message', message => {
     
     // bot to bot
-    // TODO: bot to bot
-    
-
-    // user to bot
-    if (message.content === 'lol') {
-        message.channel.send('hahahaha');
+    if (message.content === '++p') {
+        message.channel.send('=m l');
+        message.channel.send('=m j');
+        message.channel.send('=m sf');
+        message.channel.send('=m r on');
+    }
+    if (message.content === '++s') {
+        message.channel.send('t!dailies');
+        message.channel.send('t!slot');
+        message.channel.send('t!fish');
     }
     if (message.content === '++e') {
         message.channel.send('@everyone');

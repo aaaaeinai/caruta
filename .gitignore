@@ -9,6 +9,8 @@ yarn-error.log*
 ./db.json
 ./db.js
 
+./typed/db.ts
+
 # Runtime data
 pids
 *.pid
@@ -62,3 +64,8 @@ typings/
 .env
 db.json
 db.js
+db.ts
+
+# don't use at the moment
+./typed
+token_discord.py
