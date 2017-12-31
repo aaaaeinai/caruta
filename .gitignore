@@ -69,3 +69,6 @@ db.ts
 # don't use at the moment
 ./typed
 token_discord.py
+
+# Byte-compiled / optimized / DLL files
+./__pycache__
